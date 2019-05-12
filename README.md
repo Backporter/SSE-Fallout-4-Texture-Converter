@@ -16,6 +16,13 @@ these can be found in the PS4 SDK
 
 location: C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\host_tools\bin
 
+PS4 SDK ("Can't give a link sorry")
+
+though if you have it and don't want to install it you can do this  extract it than got to "InstallFiles[55]" extract the zip file givin and copy
+
+libSceGnm.dll & libSceGpuAddress.dll than go to "InstallFiles[33]" extract the zip file givin and copy libSceTextureTool.dll & 
+orbis-image2gnf.exe to the data folder and you are done.
+
 How to install the required files:
 
 step one(1): copy all the required files to the "Data" folder
