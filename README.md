@@ -34,15 +34,19 @@ Once you have gotten the .dds/.tga files of your choice onto the tool click "Con
 Questions and answers:
 
 Q What is this tool for?
+
 A This tool converters .dds/.tga files to the file format known as .gnf which is used by default in Skyrim Special Edition and Fallout 4 on PS4.
 
 Q What is .gnf, should I use it?
+
 A .gnf is the format used by default on Skyrim Special Edition and Fallout 4 on PS4. This tool is technically only optional, however it has many advantages. As long as the conversions don't fail (they rarely do for SSE, Fallout 4 is a bit of a mess but slowly being worked on) the .gnf will run better than any .dds/.tga or other texture.
 
 Q This tool just produces another or the same .dds/.tga file, what happened?
+
 A This tool by default converts the .dds/.tga file to .gnf then renames it back, the reason it does this is because Skyrim Special Edition and Fallout 4 are still looking for the extension .dds/.tga, not .gnf, but keep in mind the game is still using .gnf by default, they are just all renamed to .dds/.tga (except a few exceptions).
 
 Q This tool produced a 0 byte .dds/.tga or didn't do anything to the file, what happened?
+
 A While rare, the tool can fail to convert certain textures, I am not aware of any fixes, one possible fix could be to process the .dds/.tga again through a texture editor and seeing if that works with the converter. If all fails then it must be a loose file unfortunately.
 
 You are done use the tool as you wish
