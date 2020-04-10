@@ -280,6 +280,7 @@ namespace SSE_Fallout_4_Texture_Converter
                     process.WaitForExit();
                     File.Delete(filePaths[i]);
                     File.Move(filePaths[i].ToString().Replace(".DDS", ".gnf"), (filePaths[i].ToString().Replace(".gnf", ".DDS")));
+                    File.Move(filePaths[i].ToString(), (filePaths[i].ToString().Replace(".DDS", ".dds")));
                     /// this is going to make the progress bar know how many files there are so it can move the bar acordingly
                     progressBar1.Maximum = lboxFiles.Items.Count;
                     /// This is going to make it so you can see the bar move
