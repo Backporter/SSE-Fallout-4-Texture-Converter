@@ -14,7 +14,7 @@ libSceTextureTool.dll
 
 these can be found in the PS4 SDK
 
-location: C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\host_tools\bin
+location: C:\Program Files (x86)\SCE\ORBIS SDKs\X.XXX\host_tools\bin
 
 PS4 SDK ("Can't give a link sorry")
 
