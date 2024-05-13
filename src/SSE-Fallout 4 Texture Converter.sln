@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSE-Fallout 4 Texture Converter", "SSE-Fallout 4 Texture Converter\SSE-Fallout 4 Texture Converter.csproj", "{E2E5DDEA-768F-4FB1-817B-82BD05F09005}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2E5DDEA-768F-4FB1-817B-82BD05F09005}.Debug|x64.ActiveCfg = Debug|x64
+		{E2E5DDEA-768F-4FB1-817B-82BD05F09005}.Debug|x64.Build.0 = Debug|x64
+		{E2E5DDEA-768F-4FB1-817B-82BD05F09005}.Release|x64.ActiveCfg = Release|x64
+		{E2E5DDEA-768F-4FB1-817B-82BD05F09005}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB079973-C889-4618-813E-2FB35A2CED62}
+	EndGlobalSection
+EndGlobal
