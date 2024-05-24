@@ -14,6 +14,10 @@ namespace SSE_Fallout_4_Texture_Converter
 {
 	public partial class Main : Form
 	{
+        // 
+        public static long StartTime = 0;
+        public static long EndTime = 0;
+
         //
         public static List<string> filePaths = new List<string>();
 
@@ -31,6 +35,7 @@ namespace SSE_Fallout_4_Texture_Converter
 
                     if (GNF.Processed == filePaths.Count)
                     {
+                        EndTime = DateTimeOffset.Now.ToUnixTimeSeconds();
                         Finished();
                         return;
                     }
@@ -44,7 +49,7 @@ namespace SSE_Fallout_4_Texture_Converter
         {
             base.Invoke(new Action(delegate ()
             {
-                MessageBox.Show("Your Textures are converted!", "Finished!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Your Textures are converted!\nTotal Processed: {GNF.Processed}/{filePaths.Count}, Total Time Spend Processing: {EndTime - StartTime}s", "Finished!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 convertlb.Text = "Finished";
                 filePaths.Clear();
                 lboxFiles.Items.Clear();
@@ -334,6 +339,9 @@ namespace SSE_Fallout_4_Texture_Converter
             //
             Action<List<string>, Int32> gnfTask = (ListToProcess, threadID) => GNF.Spawn(ListToProcess, threadID);
             List<List<string>> objects = SplitList(filePaths, Threading.GetMaxAllowedTaskCount());
+
+            //
+            StartTime = DateTimeOffset.Now.ToUnixTimeSeconds();
 
             //
             Threading.Global.DispatchWorker(gnfTask, objects);

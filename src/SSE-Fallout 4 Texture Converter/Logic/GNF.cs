@@ -509,7 +509,7 @@ namespace SSE_Fallout_4_Texture_Converter
                     process.StartInfo.WorkingDirectory = Path.Combine(Environment.CurrentDirectory, "Data");
                     process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
                     process.StartInfo.CreateNoWindow = true;
-                    process.StartInfo.Arguments = $"-i {input} -o {output} {args}";
+                    process.StartInfo.Arguments = $"-i \"{input}\" -o \"{output}\" {args}";
 
                     if (Settings.Global.LogProcessOutput)
                     {
