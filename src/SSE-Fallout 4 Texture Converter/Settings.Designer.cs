@@ -119,8 +119,6 @@
             // halfthreadcountcb
             // 
             this.halfthreadcountcb.AutoSize = true;
-            this.halfthreadcountcb.Checked = true;
-            this.halfthreadcountcb.CheckState = System.Windows.Forms.CheckState.Checked;
             this.halfthreadcountcb.Location = new System.Drawing.Point(12, 179);
             this.halfthreadcountcb.Name = "halfthreadcountcb";
             this.halfthreadcountcb.Size = new System.Drawing.Size(113, 17);

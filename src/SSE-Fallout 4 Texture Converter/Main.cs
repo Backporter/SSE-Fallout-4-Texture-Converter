@@ -110,18 +110,12 @@ namespace SSE_Fallout_4_Texture_Converter
         private void Main_Load(object sender, EventArgs e)
 		{
             //
-            if (!File.Exists(config))
-            {
-                File.WriteAllText(config, Resources.config);
-            }
-
-            if (Properties.Settings.Default.warned == "false")
+            if (!Settings.Global.Warned)
 			{
 				MessageBox.Show("if any other required tools are missing this will not work right\n\nDue to legail reasons i can't include the required tools you will need to find them yourself\n\nDo not delete the config file! if you do you will need to redownlioad the tool from github or re-extract it", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-				Properties.Settings.Default.warned = "true";
-                Properties.Settings.Default.Save();
+                Settings.Global.Warned = true;
 			}
-
+            
             if (!File.Exists(SCEE.GetExecutablePath("orbis-image2gnf.exe")))
             {
 				MessageBox.Show("orbis-image2gnf.exe is missing please put it in the data folder", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -152,6 +146,9 @@ namespace SSE_Fallout_4_Texture_Converter
             {
                 worker.Abort();
             }
+
+            //
+            Settings.Global.Serialize();
         }
 
         private void btadd_Click(object sender, EventArgs e)

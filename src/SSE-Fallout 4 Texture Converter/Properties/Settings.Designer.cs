@@ -17,26 +17,117 @@ namespace SSE_Fallout_4_Texture_Converter.Properties {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
-        public static Settings Default
-        {
-            get
-            {
+        public static Settings Default {
+            get {
                 return defaultInstance;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("false")]
-        public string warned
-        {
-            get
-            {
-                return ((string)(this["warned"]));
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Warned {
+            get {
+                return ((bool)(this["Warned"]));
             }
-            set
-            {
-                this["warned"] = value;
+            set {
+                this["Warned"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ScanTextureForFormat {
+            get {
+                return ((bool)(this["ScanTextureForFormat"]));
+            }
+            set {
+                this["ScanTextureForFormat"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool BackUpOrginalTexture {
+            get {
+                return ((bool)(this["BackUpOrginalTexture"]));
+            }
+            set {
+                this["BackUpOrginalTexture"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool KeepGNFExtestion {
+            get {
+                return ((bool)(this["KeepGNFExtestion"]));
+            }
+            set {
+                this["KeepGNFExtestion"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DisableMipMaps {
+            get {
+                return ((bool)(this["DisableMipMaps"]));
+            }
+            set {
+                this["DisableMipMaps"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ShowFullFilePath {
+            get {
+                return ((bool)(this["ShowFullFilePath"]));
+            }
+            set {
+                this["ShowFullFilePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LogProcessOutput {
+            get {
+                return ((bool)(this["LogProcessOutput"]));
+            }
+            set {
+                this["LogProcessOutput"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool LogThreadOutput {
+            get {
+                return ((bool)(this["LogThreadOutput"]));
+            }
+            set {
+                this["LogThreadOutput"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool UseHalfThreadCount {
+            get {
+                return ((bool)(this["UseHalfThreadCount"]));
+            }
+            set {
+                this["UseHalfThreadCount"] = value;
             }
         }
     }
